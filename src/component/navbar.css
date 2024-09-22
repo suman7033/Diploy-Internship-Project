@@ -9,7 +9,14 @@
    color: rgb(16, 242, 42);
    font-size: 2em;
    margin-top: -1vw;
-   
+ }
+ .menu-icon{
+   display: none;
+ }
+ img{
+   width: 30px;
+   height: 40px;
+   border-radius: 20px;
  }
  .div1{
    display: flex;
@@ -31,24 +38,96 @@
    border: none;
    border-radius: 5px;
    font-weight: bold;
+   cursor: pointer;
    background-color: rgb(83, 236, 83);
+ }
+ .dropdown{
+   position: relative;
+   display: inline-block;
+   cursor: pointer;
+ }
+ .dropdown-content{
+   display: none;
+   position: absolute;
+   background-color: #f9f9f9;
+   min-width: 160px;
+   cursor: pointer;
+   box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+   z-index: 10px;
+   border-radius: 5px;
+ }
+ .dropdown-content a{
+   color: black;
+   padding: 12px 16px;
+   text-decoration: none;
+   display: block;
+ }
+ .dropdown-content a:hover{
+    background-color: #fff;
+ }
+ .CloseIcon{
+   display: none;
+ }
+ .dropdown:hover .dropdown-content{
+   display: block;
  }
 
  @media screen and (max-width: 760px){
    .div{
       display: flex;
-      text-align: center;
    } 
+   .menu-icon{
+      display: block;
+      cursor: pointer;
+   }
    .div1{
-       display: none;
+       position: absolute;
+       display: flex;
+       flex-direction: column;
+       align-items: flex-start;
+       position: fixed;
+       top: 0;
+       left: 0;
+       z-index: 10;
+       width: 300px;
+       background-color: gray;
+       padding-left: 10px;
+       padding-top: 70px;
+       gap: 0px;
+       height: 100%;
+       opacity: 0;
+       transform: translateX(-100%);
+
+    }
+    .div1.active{
+      transform: translateX(0);
+      opacity: 1;
+    }
+    h3{
+      display: none;
+    }
+    img{
+       width: 50px;
+    }
+    .menu{
+      display: block;
+      cursor: pointer;
+      padding-top: 6px;
+    }
+    .menu:checked ~ .div1{
+       display: flex;
+    }
+    .CloseIcon{
+      display: block;
+      margin-top: -50px;
+      padding-left: 270px;
+      cursor: pointer;
+    }
+    .dropdown-content{
+      margin-left: 90px;
+      margin-top: -20px;
     }
 
-    h3{
-       font-size: 1.4em;
-       margin-right: 10vw;
-       margin-left: 1vw;
-       margin-top: 0px;
-    }
     .div2{
         width: 45vw;
         gap: 10px;
