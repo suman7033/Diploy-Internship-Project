@@ -1,0 +1,99 @@
+/* Basic navbar styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+  background-color: #f8f9fa;
+}
+
+.logo {
+  font-size: 2rem;
+  color: blue;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: green;
+  padding: 0.5rem 1rem;
+}
+
+.nav-links a:hover {
+  background-color: lightgray;
+  border-radius: 5px;
+}
+
+/* Auth buttons */
+.auth-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: darkgreen;
+}
+
+/* Dropdown Styles */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-toggle {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  border: 1px solid #ddd;
+}
+
+.dropdown-menu li {
+  margin-bottom: 0.5rem;
+}
+
+.dropdown-menu li a {
+  text-decoration: none;
+  color: black;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 760px) {
+  .nav-links {
+    display: none; /* Hide navigation on small screens */
+  }
+
+  .logo {
+    font-size: 3rem;
+  }
+
+  .btn {
+    font-size: 2rem;
+  }
+}
