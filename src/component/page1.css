@@ -23,6 +23,7 @@ h5{
     height: 8vh;
     width: 15vw;
     font-weight: bold;
+    cursor: pointer;
 }
 .page1-img{
     width: 45vw;
@@ -39,6 +40,7 @@ h5{
     }
     .page1-btn{
         width: 30vw;
+        cursor: pointer;
     }
     .page1-img{
         width: 70vw;
