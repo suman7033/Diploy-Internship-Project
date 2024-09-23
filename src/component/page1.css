@@ -28,3 +28,19 @@ h5{
     width: 45vw;
     height: 60vh;
 }
+
+@media screen and (max-width: 760px){
+    .page1{
+        display: block;
+        
+    }
+    .part-1{
+        width: 70vw;
+    }
+    .page1-btn{
+        width: 30vw;
+    }
+    .page1-img{
+        width: 70vw;
+    }
+}

@@ -18,5 +18,15 @@
     height: 20vh;
 } 
 
+@media screen and (max-width: 760px){
+    .page2-div{
+        display: block;
+        justify-content: center;
+    }
+    .page2-1{
+        width: 100vw;
+    }
+}
+
 
  
