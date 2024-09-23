@@ -1,0 +1,22 @@
+.page2-div{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 50px;
+}
+.page2-1{
+    display: flex;
+    flex-direction: column;
+   justify-content: space-evenly;
+   align-items: center;
+   width: 25vw;
+   text-align: center;
+   /* border: 1px solid rgb(245, 242, 242); */
+}
+.page2-img{
+    width: 30vw;
+    height: 20vh;
+} 
+
+
+ 

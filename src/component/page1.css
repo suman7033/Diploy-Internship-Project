@@ -1,0 +1,30 @@
+.page1{
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+    gap: 1px;
+    margin-left: 75px;
+}
+.part-1{
+    width: 50vw;
+    color: beige;
+}
+h5{
+    color: green;
+}
+.page1-headline{
+    font-weight: bold;
+    color: antiquewhite;
+}
+.page1-btn{
+    background-color: #9bdc9d;
+    border: none;
+    border-radius: 5px;
+    height: 8vh;
+    width: 15vw;
+    font-weight: bold;
+}
+.page1-img{
+    width: 45vw;
+    height: 60vh;
+}
